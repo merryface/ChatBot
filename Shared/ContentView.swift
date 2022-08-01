@@ -24,9 +24,33 @@ struct ContentView: View {
             
             ScrollView {
                 ForEach(messages, id: \.self) { message in
-                    Text(message)
-                }
-            }
+                    if message.contains("[USER]") {
+                        let newMessage = message.replacingOccurrences(of: "[USER]", with: "")
+                        
+                        HStack {
+                            Spacer()
+                            Text(newMessage)
+                                .padding()
+                                .foregroundColor(.white)
+                                .background(.blue.opacity(0.8))
+                                .cornerRadius(10)
+                                .padding(.horizontal, 16)
+                                .padding(.bottom, 10)
+                        }
+                    } else {
+                        HStack {
+                            Text(message)
+                                .padding()
+                                .background(.gray.opacity(0.15))
+                                .cornerRadius(10)
+                                .padding(.horizontal, 16)
+                                .padding(.bottom, 10)
+                            Spacer()
+                        }
+                    }
+                }.rotationEffect(.degrees(180))
+            }.rotationEffect(.degrees(180))
+                .background(Color.gray.opacity(0.1))
             
             HStack {
                 TextField("Type something", text: $messageText)
@@ -55,7 +79,7 @@ struct ContentView: View {
             self.messageText = ""
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             withAnimation {
                 messages.append(getBotResponse(message: message))
             }
