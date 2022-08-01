@@ -13,6 +13,8 @@
 		3A31A5C32897D8960091D8E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31A5B12897D8950091D8E1 /* ContentView.swift */; };
 		3A31A5C42897D8960091D8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A31A5B22897D8960091D8E1 /* Assets.xcassets */; };
 		3A31A5C52897D8960091D8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A31A5B22897D8960091D8E1 /* Assets.xcassets */; };
+		3A31A5CF2897DA1D0091D8E1 /* Botresponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31A5CE2897DA1C0091D8E1 /* Botresponse.swift */; };
+		3A31A5D02897DA1D0091D8E1 /* Botresponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31A5CE2897DA1C0091D8E1 /* Botresponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		3A31A5B72897D8960091D8E1 /* ChatBotTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBotTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A31A5BD2897D8960091D8E1 /* ChatBotTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBotTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A31A5BF2897D8960091D8E1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		3A31A5CE2897DA1C0091D8E1 /* Botresponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Botresponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			children = (
 				3A31A5B02897D8950091D8E1 /* ChatBotTutorialApp.swift */,
 				3A31A5B12897D8950091D8E1 /* ContentView.swift */,
+				3A31A5CE2897DA1C0091D8E1 /* Botresponse.swift */,
 				3A31A5B22897D8960091D8E1 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -176,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A31A5CF2897DA1D0091D8E1 /* Botresponse.swift in Sources */,
 				3A31A5C22897D8960091D8E1 /* ContentView.swift in Sources */,
 				3A31A5C02897D8960091D8E1 /* ChatBotTutorialApp.swift in Sources */,
 			);
@@ -185,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A31A5D02897DA1D0091D8E1 /* Botresponse.swift in Sources */,
 				3A31A5C32897D8960091D8E1 /* ContentView.swift in Sources */,
 				3A31A5C12897D8960091D8E1 /* ChatBotTutorialApp.swift in Sources */,
 			);
